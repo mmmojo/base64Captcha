@@ -1,5 +1,7 @@
 # Base64 Encoding Captcha for RESTful application
 [![Go Report Card](https://goreportcard.com/badge/github.com/mojocn/base64Captcha)](https://goreportcard.com/report/github.com/mojocn/base64Captcha)
+[![GoDoc](https://godoc.org/github.com/mojocn/base64Captcha?status.svg)](https://godoc.org/github.com/mojocn/base64Captcha)
+
 Package base64Captcha creates base64-encoding png for digits captcha.
 base64Captcha is used for rapid development of RESTful APIs, web apps and backend services in Go.
 give a string identifier to the package and it returns with a base64-encoding-png-string
