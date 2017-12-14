@@ -1,11 +1,11 @@
 # Base64 Encoding Captcha for RESTful application
 [![Go Report Card](https://goreportcard.com/badge/github.com/mojocn/base64Captcha)](https://goreportcard.com/report/github.com/mojocn/base64Captcha)
-Package base64Captcha create digits captcha encoded by base64 png image
+Package base64Captcha creates base64-encoding png for digits captcha.
 base64Captcha is used for rapid development of RESTful APIs, web apps and backend services in Go.
 give a string identifier to the package and it returns with a base64-encoding-png-string
 #### Why Base64 Image for RESTful Application
       Data URIs are now supported by all major browsers. IE supports embedding images since version 8 as well.
-      RESTful Application retruns small base64 image is more convenient
+      RESTful Application retruns small base64 image is more convenient.
 CSS Image Embedding Example
 ```css
 div.image {

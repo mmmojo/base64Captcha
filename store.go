@@ -74,12 +74,10 @@ func (s *memoryStore) Set(id string, digits []byte) {
 	s.digitsById[id] = digits
 	s.idByTime.PushBack(idByTimeValue{time.Now(), id})
 	s.numStored++
-	if s.numStored <= s.collectNum {
-		s.Unlock()
-		return
-	}
 	s.Unlock()
-	go s.collect()
+	if s.numStored > s.collectNum {
+		go s.collect()
+	}
 }
 
 func (s *memoryStore) Get(id string, clear bool) (digits []byte) {

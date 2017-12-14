@@ -73,7 +73,7 @@ func main() {
 	http.HandleFunc("/api/verifyCaptcha", captchaVerifyHandle)
 
 	fmt.Println("Server is at localhost:777")
-	if err := http.ListenAndServe(":777", nil); err != nil {
+	if err := http.ListenAndServe("localhost:777", nil); err != nil {
 		log.Fatal(err)
 	}
 }
